@@ -3,7 +3,9 @@
     <div class="back">
       <span class="iconfont iconjiantou2" @click="backFn"></span>
     </div>
-    <div class="title"><slot></slot></div>
+    <div class="title">
+      <slot></slot>
+    </div>
     <div class="extra"></div>
   </div>
 </template>
@@ -21,7 +23,7 @@ export default {
 <style lang="less" scoped>
 .hm-header {
   height: 40px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid grey;
   display: flex;
   line-height: 40px;
   .back,
